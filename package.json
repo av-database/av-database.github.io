@@ -1,0 +1,43 @@
+{
+  "name": "av",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "sync:products": "npx tsx scripts/sync-products-dmm.ts",
+    "sync:products:csv": "npx tsx scripts/sync-products.ts",
+    "sync:actresses": "npx tsx scripts/sync-actresses.ts",
+    "sync:actress-image-ids": "npx tsx scripts/sync-actress-image-ids.ts",
+    "update:birthday": "npx tsx scripts/update-birthday.ts",
+    "update:birthday:wiki": "npx tsx scripts/update-birthday-wikipedia.ts",
+    "update:birthday:gravurefit": "npx tsx scripts/update-birthday-gravurefit.ts",
+    "update:profile": "npx tsx scripts/update-actress-profile.ts",
+    "sync:genres": "npx tsx scripts/sync-genres.ts",
+    "sync:makers": "npx tsx scripts/sync-makers.ts",
+    "merge:actresses": "npx tsx scripts/merge-actresses.ts",
+    "sync:actress-ids:gravurefit": "npx tsx scripts/sync-actress-ids-from-gravurefit.ts",
+    "sync:actress-ids:avwiki": "npx tsx scripts/sync-actress-ids-from-avwiki.ts",
+    "update:actress-ids-by-name:gravurefit": "npx tsx scripts/update-actress-ids-by-name-gravurefit.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.116.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
